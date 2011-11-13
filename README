@@ -1,0 +1,3 @@
+Set of classes useful for using Avro files with the new MapReduce API. Most of this is copied from / modeled after the original Avro mapred support. The approach for mapper and reducers is slightly different though. The original Avro mapred support fully wraps the actual mapper and reducer and abstracts the framework away from the Avro mapper and reducer. In this approach the Avro mapper and reducer are just subclasses of a specialized mapper and reducer implementation present here.
+
+See the unit test for some examples of how to use.
