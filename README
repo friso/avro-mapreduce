@@ -1,3 +1,5 @@
+UPDATE: the original Avro issue for this (https://issues.apache.org/jira/browse/AVRO-593) has long been fixed. The fix renders this code obsolete and the solution that went into Avro is better than this one.
+
 Set of classes useful for using Avro files with the new MapReduce API. Most of this is copied from / modeled after the original Avro mapred support. The approach for mapper and reducers is slightly different though. The original Avro mapred support fully wraps the actual mapper and reducer and abstracts the framework away from the Avro mapper and reducer. In this approach the Avro mapper and reducer are just subclasses of a specialized mapper and reducer implementation present here.
 
 See the unit test for some examples of how to use.
